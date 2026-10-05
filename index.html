@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Whamburg | Windsor's Smashed Burger Joint</title>
+  <meta name="description" content="Smash burgers, fries and shakes in Windsor, Ontario. Order online for pickup or delivery, find our two locations, and book the Whamburg food truck." />
+  <meta name="theme-color" content="#fe4646" />
+  <link rel="icon" href="/logo.png" />
+  <link rel="preload" as="image" href="/layers/1-top-bun.svg" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#menu">Skip to the menu</a>
+
+  <header class="site-header" id="site-header">
+    <div class="bar">
+      <a class="brand" href="#top" aria-label="Whamburg, back to top"><img src="/logo.png" width="170" height="40" alt="Whamburg" /></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#top" class="is-active" aria-current="page">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="https://whamburg.com/promos/" target="_blank" rel="noopener">Promos<span class="sr"> (opens whamburg.com)</span></a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#food-truck">Food Truck</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+        <a class="btn btn--navy nav-cta" href="https://whamburg.com/orderonline/" target="_blank" rel="noopener">Order now<span class="sr"> (opens whamburg.com)</span></a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Scroll-controlled burger -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__dark"></div>
+      <div class="hero__light"></div>
+
+      <div class="hero__copy">
+        <p class="eyebrow">Windsor's finest smashed burger joint</p>
+        <h1 id="hero-title"><span>Smashed</span><span>to order.</span></h1>
+      </div>
+
+      <div class="stage-wrap">
+        <div class="stage" id="stage" role="img" aria-label="A Whamburg smash burger. Scrolling pulls it apart into its ingredients: potato bun, Wham Sauce, tomato, lettuce, American cheese, smash patty, pickles and onion."></div>
+      </div>
+
+      <div class="stack-title" aria-hidden="true">
+        <span>The Stack</span>
+        <small>Eight layers. Zero shortcuts.</small>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--coral btn--lg" href="https://whamburg.com/orderonline/" target="_blank" rel="noopener">Order Now<span class="sr"> (opens whamburg.com)</span></a>
+        <a class="btn btn--ghost btn--lg" href="#menu">View Menu</a>
+      </div>
+      <p class="scroll-hint" aria-hidden="true"><span></span>Scroll</p>
+    </section>
+
+    <!-- Simple (mobile / reduced motion) exploded view -->
+    <section class="stack-simple" id="stack-simple" aria-labelledby="stack-simple-title">
+      <h2 id="stack-simple-title">The Stack</h2>
+      <p class="stack-simple__sub">Eight layers. Zero shortcuts.</p>
+      <ol class="stack-list" id="stack-list"></ol>
+    </section>
+
+    <!-- Featured menu -->
+    <section class="menu section" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--ink">Featured menu</p>
+          <h2 id="menu-title">Smash it. Stack it. Eat it.</h2>
+          <p class="lede">Every burger and sandwich is made to order, and the whole menu is halal. Current prices live on the full menu.</p>
+        </header>
+
+        <ul class="cards">
+          <li class="card card--feature reveal">
+            <div class="card__art" data-art="wham"></div>
+            <div class="card__body">
+              <span class="chip">Best seller combo</span>
+              <h3>The Wham Combo</h3>
+              <p>A 3&nbsp;oz smash patty on a Martin's Potato Bun with American cheese, diced onion, leafy lettuce, dill pickles, tomatoes and Wham Sauce. Served with fries, garlic aioli and a beverage.</p>
+              <a class="link-arrow" href="https://whamburg.com/product/the-wham-combo/" target="_blank" rel="noopener">See price &amp; order<span class="sr"> The Wham Combo (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art" data-art="wham"></div>
+            <div class="card__body">
+              <h3>The Wham</h3>
+              <p>3&nbsp;oz smash patty, Wham Sauce, lettuce, tomato, pickle and American cheese.</p>
+              <a class="link-arrow" href="https://whamburg.com/menu/" target="_blank" rel="noopener">View on menu<span class="sr"> The Wham (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art" data-art="double"></div>
+            <div class="card__body">
+              <h3>The Double Whammy</h3>
+              <p>Smash burger, doubled. Built for the hungry.</p>
+              <a class="link-arrow" href="https://whamburg.com/menu/" target="_blank" rel="noopener">View on menu<span class="sr"> The Double Whammy (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art" data-art="chicken"></div>
+            <div class="card__body">
+              <h3>The Fried Chix</h3>
+              <p>Fried chicken breast, buttermilk ranch, leafy lettuce and pickle.</p>
+              <a class="link-arrow" href="https://whamburg.com/menu/" target="_blank" rel="noopener">View on menu<span class="sr"> The Fried Chix (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art" data-art="hot"></div>
+            <div class="card__body">
+              <span class="chip chip--hot">Spicy</span>
+              <h3>Hot Southern Chix</h3>
+              <p>Fried chicken breast, spicy hot oil, a brown sugar and smoked paprika dusting, coleslaw and pickle.</p>
+              <a class="link-arrow" href="https://whamburg.com/product/hot-southern-chix/" target="_blank" rel="noopener">See price &amp; order<span class="sr"> Hot Southern Chix (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art" data-art="bean"></div>
+            <div class="card__body">
+              <span class="chip chip--green">Vegan</span>
+              <h3>The BeanBurg</h3>
+              <p>Three-bean patty, deep-fried on a Martin's Potato Bun with diced onion, lettuce, dill pickles, tomatoes and Vegan Wham Sauce.</p>
+              <a class="link-arrow" href="https://whamburg.com/menu/" target="_blank" rel="noopener">View on menu<span class="sr"> The BeanBurg (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art card__art--icon"><img src="/layers/fries.svg" alt="" width="200" height="200" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Fries &amp; Sides</h3>
+              <p>Double Fried French Fries and Onion Rings with garlic aioli, or Cravy Fries with homemade cheese sauce and gravy.</p>
+              <a class="link-arrow" href="https://whamburg.com/menu/" target="_blank" rel="noopener">View on menu<span class="sr"> Fries and sides (opens whamburg.com)</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <div class="card__art card__art--icon"><img src="/layers/shake.svg" alt="" width="200" height="200" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Shakes &amp; Sweets</h3>
+              <p>Milkshakes in Vanilla, Strawberry or Cookies N Cream, plus the Brown Butter Smash Cookie with chocolate chunks and sea salt.</p>
+              <a class="link-arrow" href="https://whamburg.com/menu/" target="_blank" rel="noopener">View on menu<span class="sr"> Shakes and sweets (opens whamburg.com)</span></a>
+            </div>
+          </li>
+        </ul>
+
+        <p class="menu__cta reveal">
+          <a class="btn btn--navy btn--lg" href="https://whamburg.com/menu/" target="_blank" rel="noopener">See the full menu &amp; prices<span class="sr"> (opens whamburg.com)</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Order band -->
+    <section class="order" id="order" aria-labelledby="order-title">
+      <div class="wrap order__inner">
+        <div class="reveal">
+          <p class="eyebrow">Pickup or delivery</p>
+          <h2 id="order-title">Hot, fast,<br />at your door.</h2>
+          <p class="lede lede--light">Order online for pickup or delivery in Windsor, Tecumseh, LaSalle, Amherstburg and Lakeshore. Delivery is a simple flat $5 fee with no minimums.</p>
+          <div class="btn-row">
+            <a class="btn btn--navy btn--lg" href="https://whamburg.com/orderonline/" target="_blank" rel="noopener">Order Now<span class="sr"> (opens whamburg.com)</span></a>
+            <a class="btn btn--ghost-light btn--lg" href="https://whamburg.com/promos/" target="_blank" rel="noopener">See promos<span class="sr"> (opens whamburg.com)</span></a>
+          </div>
+        </div>
+        <ul class="order__areas reveal" aria-label="Delivery areas">
+          <li>Windsor</li><li>Tecumseh</li><li>LaSalle</li><li>Amherstburg</li><li>Lakeshore</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="locations section" id="locations" aria-labelledby="loc-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--ink">Locations</p>
+          <h2 id="loc-title">Two spots in Windsor.</h2>
+        </header>
+        <div class="loc-grid">
+          <article class="loc reveal">
+            <h3>Whamburg California</h3>
+            <address>401 California Ave<br />Windsor, ON N9B&nbsp;3A9</address>
+            <dl class="hours">
+              <div><dt>Mon – Fri</dt><dd>11&nbsp;AM – 8&nbsp;PM</dd></div>
+              <div><dt>Sat &amp; Sun</dt><dd>12&nbsp;PM – 8&nbsp;PM</dd></div>
+            </dl>
+            <div class="btn-row">
+              <a class="btn btn--navy" href="https://www.google.com/maps/dir/?api=1&destination=401+California+Ave%2C+Windsor%2C+ON+N9B+3A9" target="_blank" rel="noopener">Get directions<span class="sr"> to Whamburg California (opens Google Maps)</span></a>
+              <a class="btn btn--outline" href="https://whamburg.com/california/" target="_blank" rel="noopener">Location page<span class="sr"> (opens whamburg.com)</span></a>
+            </div>
+          </article>
+          <article class="loc reveal">
+            <h3>Whamburg Walker</h3>
+            <address>3873 Walker Rd<br />Windsor, ON N8W&nbsp;3T1</address>
+            <dl class="hours">
+              <div><dt>Every day</dt><dd>11&nbsp;AM – 11&nbsp;PM</dd></div>
+            </dl>
+            <div class="btn-row">
+              <a class="btn btn--navy" href="https://www.google.com/maps/dir/?api=1&destination=3873+Walker+Rd%2C+Windsor%2C+ON+N8W+3T1" target="_blank" rel="noopener">Get directions<span class="sr"> to Whamburg Walker (opens Google Maps)</span></a>
+              <a class="btn btn--outline" href="https://whamburg.com/walker/" target="_blank" rel="noopener">Location page<span class="sr"> (opens whamburg.com)</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="note reveal">Questions? Call <a href="tel:+15198000373">(519)&nbsp;800-0373</a> or see the <a href="https://whamburg.com/contact-us/" target="_blank" rel="noopener">contact page<span class="sr"> (opens whamburg.com)</span></a>. Hours can change on holidays, so check the location page before you head out.</p>
+      </div>
+    </section>
+
+    <!-- Catering + food truck -->
+    <section class="events section" aria-labelledby="events-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">Catering &amp; food truck</p>
+          <h2 id="events-title">We bring the grill to you.</h2>
+          <p class="lede lede--light">From small private events to large corporate functions and birthday parties, the Whamburg food truck serves made-to-order smash burgers on site. We recommend it for events of 50 people or more.</p>
+        </header>
+
+        <div class="events__grid">
+          <article class="panel reveal" id="catering">
+            <h3>Catering</h3>
+            <p>Pick the service style that suits your crowd.</p>
+            <ul class="ticks">
+              <li><strong>Full Service.</strong> Made-to-order burgers crafted on the spot.</li>
+              <li><strong>Self Service.</strong> Guests build their own from fresh ingredients.</li>
+            </ul>
+            <p class="small">We recently fed 450 people at once. <a href="https://whamburg.com/post/whamburg-fed-windsors-battery-plant/" target="_blank" rel="noopener">Read the story<span class="sr"> (opens whamburg.com)</span></a>.</p>
+            <a class="btn btn--coral" href="https://whamburg.com/catering/" target="_blank" rel="noopener">Book catering<span class="sr"> (opens whamburg.com)</span></a>
+          </article>
+
+          <article class="panel panel--coral reveal" id="food-truck">
+            <h3>Food truck</h3>
+            <p>Catch the truck at its weekly pop-up, or book it for your own event.</p>
+            <p class="popup"><strong>Every Tuesday</strong><span>12&nbsp;PM – 7&nbsp;PM</span><span>12049 Tecumseh Rd E</span></p>
+            <p class="small">Private-event pages: <a href="https://whamburg.com/food-truck/" target="_blank" rel="noopener">Windsor<span class="sr"> (opens whamburg.com)</span></a> · <a href="https://whamburg.com/food-truck/chatham-kent-food-truck/" target="_blank" rel="noopener">Chatham-Kent<span class="sr"> (opens whamburg.com)</span></a> · <a href="https://whamburg.com/food-truck/london-food-truck/" target="_blank" rel="noopener">London<span class="sr"> (opens whamburg.com)</span></a></p>
+            <div class="btn-row">
+              <a class="btn btn--navy" href="https://whamburg.com/food-truck/" target="_blank" rel="noopener">Book the truck<span class="sr"> (opens whamburg.com)</span></a>
+              <a class="btn btn--ghost-light" href="https://www.google.com/maps/dir/?api=1&destination=12049+Tecumseh+Rd+E%2C+Windsor%2C+ON" target="_blank" rel="noopener">Pop-up directions<span class="sr"> (opens Google Maps)</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a href="#top" class="brand brand--footer" aria-label="Whamburg, back to top"><img src="/logo.png" width="170" height="40" alt="Whamburg" loading="lazy" /></a>
+        <p>Windsor's finest smashed burger joint. Smash burgers, fries and shakes. Our entire menu is halal.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#menu">Featured menu</a></li>
+          <li><a href="https://whamburg.com/orderonline/" target="_blank" rel="noopener">Order online<span class="sr"> (opens whamburg.com)</span></a></li>
+          <li><a href="https://whamburg.com/promos/" target="_blank" rel="noopener">Promos<span class="sr"> (opens whamburg.com)</span></a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#food-truck">Food truck</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Visit</h2>
+        <ul>
+          <li>California: 401 California Ave<br /><span class="muted">Mon–Fri 11–8 · Sat &amp; Sun 12–8</span></li>
+          <li>Walker: 3873 Walker Rd<br /><span class="muted">Every day 11–11</span></li>
+          <li><a href="tel:+15198000373">(519) 800-0373</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <ul>
+          <li><a href="https://www.tiktok.com/@whamburg" target="_blank" rel="noopener">TikTok<span class="sr"> (opens in new tab)</span></a></li>
+          <li><a href="https://www.facebook.com/whamburg" target="_blank" rel="noopener">Facebook<span class="sr"> (opens in new tab)</span></a></li>
+          <li><a href="https://whamburg.com/contact-us/" target="_blank" rel="noopener">Contact us<span class="sr"> (opens whamburg.com)</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <p>© <span id="year">2026</span> Whamburg. Prices, promos and availability are on <a href="https://whamburg.com" target="_blank" rel="noopener">whamburg.com<span class="sr"> (opens in new tab)</span></a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
